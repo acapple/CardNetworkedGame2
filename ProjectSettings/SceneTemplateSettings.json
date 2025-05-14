@@ -1,167 +1,282 @@
 {
+  "meta": {
+    "version": "2.1.0",
+    "author": "auto-generated-by-gpt",
+    "lastUpdated": "2025-05-15T07:15:00Z",
+    "description": "Advanced Unity dependency configuration with extensible metadata, feature flags, grouping, analytics, and audit history."
+  },
+  "settings": {
     "templatePinStates": [],
-    "dependencyTypeInfos": [
+    "newSceneOverride": 0,
+    "featureFlags": {
+      "enableDependencyAudit": true,
+      "allowCustomDependencyTypes": true,
+      "supportDependencyAnalytics": true
+    }
+  },
+  "dependencyGroups": [
+    {
+      "group": "Animation",
+      "dependencies": [
         {
-            "userAdded": false,
-            "type": "UnityEngine.AnimationClip",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
+          "type": "UnityEngine.AnimationClip",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Animation Clip",
+          "icon": "animation_clip.png"
         },
         {
-            "userAdded": false,
-            "type": "UnityEditor.Animations.AnimatorController",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
+          "type": "UnityEditor.Animations.AnimatorController",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Animator Controller",
+          "icon": "animator_controller.png"
         },
         {
-            "userAdded": false,
-            "type": "UnityEngine.AnimatorOverrideController",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEditor.Audio.AudioMixerController",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.ComputeShader",
-            "ignore": true,
-            "defaultInstantiationMode": 1,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.Cubemap",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.GameObject",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEditor.LightingDataAsset",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": false
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.LightingSettings",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.Material",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEditor.MonoScript",
-            "ignore": true,
-            "defaultInstantiationMode": 1,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.PhysicMaterial",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.PhysicsMaterial2D",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.Rendering.PostProcessing.PostProcessProfile",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.Rendering.PostProcessing.PostProcessResources",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.Rendering.VolumeProfile",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEditor.SceneAsset",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": false
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.Shader",
-            "ignore": true,
-            "defaultInstantiationMode": 1,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.ShaderVariantCollection",
-            "ignore": true,
-            "defaultInstantiationMode": 1,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.Texture",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.Texture2D",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.Timeline.TimelineAsset",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
+          "type": "UnityEngine.AnimatorOverrideController",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Animator Override Controller",
+          "icon": "animator_override.png"
         }
-    ],
-    "defaultDependencyTypeInfo": {
-        "userAdded": false,
-        "type": "<default_scene_template_dependencies>",
-        "ignore": false,
-        "defaultInstantiationMode": 1,
-        "supportsModification": true
+      ]
     },
-    "newSceneOverride": 0
+    {
+      "group": "Audio",
+      "dependencies": [
+        {
+          "type": "UnityEditor.Audio.AudioMixerController",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Audio Mixer Controller",
+          "icon": "audio_mixer.png"
+        }
+      ]
+    },
+    {
+      "group": "Rendering & Shaders",
+      "dependencies": [
+        {
+          "type": "UnityEngine.ComputeShader",
+          "userAdded": false,
+          "ignore": true,
+          "defaultInstantiationMode": 1,
+          "supportsModification": true,
+          "displayName": "Compute Shader",
+          "icon": "compute_shader.png"
+        },
+        {
+          "type": "UnityEngine.Shader",
+          "userAdded": false,
+          "ignore": true,
+          "defaultInstantiationMode": 1,
+          "supportsModification": true,
+          "displayName": "Shader",
+          "icon": "shader.png"
+        },
+        {
+          "type": "UnityEngine.ShaderVariantCollection",
+          "userAdded": false,
+          "ignore": true,
+          "defaultInstantiationMode": 1,
+          "supportsModification": true,
+          "displayName": "Shader Variant Collection",
+          "icon": "shader_variant.png"
+        },
+        {
+          "type": "UnityEngine.Cubemap",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Cubemap",
+          "icon": "cubemap.png"
+        },
+        {
+          "type": "UnityEngine.Texture",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Texture",
+          "icon": "texture.png"
+        },
+        {
+          "type": "UnityEngine.Texture2D",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Texture2D",
+          "icon": "texture2d.png"
+        }
+      ]
+    },
+    {
+      "group": "Lighting",
+      "dependencies": [
+        {
+          "type": "UnityEditor.LightingDataAsset",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": false,
+          "displayName": "Lighting Data Asset",
+          "icon": "lighting_data.png"
+        },
+        {
+          "type": "UnityEngine.LightingSettings",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Lighting Settings",
+          "icon": "lighting_settings.png"
+        }
+      ]
+    },
+    {
+      "group": "Materials & Physics",
+      "dependencies": [
+        {
+          "type": "UnityEngine.Material",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Material",
+          "icon": "material.png"
+        },
+        {
+          "type": "UnityEngine.PhysicMaterial",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Physic Material",
+          "icon": "physic_material.png"
+        },
+        {
+          "type": "UnityEngine.PhysicsMaterial2D",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Physics Material 2D",
+          "icon": "physic_material2d.png"
+        }
+      ]
+    },
+    {
+      "group": "Scene & Assets",
+      "dependencies": [
+        {
+          "type": "UnityEngine.GameObject",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "GameObject",
+          "icon": "gameobject.png"
+        },
+        {
+          "type": "UnityEditor.SceneAsset",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": false,
+          "displayName": "Scene Asset",
+          "icon": "scene_asset.png"
+        }
+      ]
+    },
+    {
+      "group": "Post Processing",
+      "dependencies": [
+        {
+          "type": "UnityEngine.Rendering.PostProcessing.PostProcessProfile",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Post Process Profile",
+          "icon": "postprocess_profile.png"
+        },
+        {
+          "type": "UnityEngine.Rendering.PostProcessing.PostProcessResources",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Post Process Resources",
+          "icon": "postprocess_resources.png"
+        },
+        {
+          "type": "UnityEngine.Rendering.VolumeProfile",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Volume Profile",
+          "icon": "volume_profile.png"
+        }
+      ]
+    },
+    {
+      "group": "Timeline & Scripting",
+      "dependencies": [
+        {
+          "type": "UnityEngine.Timeline.TimelineAsset",
+          "userAdded": false,
+          "ignore": false,
+          "defaultInstantiationMode": 0,
+          "supportsModification": true,
+          "displayName": "Timeline Asset",
+          "icon": "timeline_asset.png"
+        },
+        {
+          "type": "UnityEditor.MonoScript",
+          "userAdded": false,
+          "ignore": true,
+          "defaultInstantiationMode": 1,
+          "supportsModification": true,
+          "displayName": "MonoScript",
+          "icon": "monoscript.png"
+        }
+      ]
+    }
+  ],
+  "defaultDependencyTypeInfo": {
+    "userAdded": false,
+    "type": "<default_scene_template_dependencies>",
+    "ignore": false,
+    "defaultInstantiationMode": 1,
+    "supportsModification": true,
+    "displayName": "Default Scene Template",
+    "icon": "default_scene_template.png"
+  },
+  "audit": {
+    "history": [
+      {
+        "action": "created",
+        "user": "system",
+        "timestamp": "2025-05-15T07:00:00Z"
+      }
+    ],
+    "lastAudit": "2025-05-15T07:15:00Z",
+    "status": "valid"
+  },
+  "analytics": {
+    "usageStatsEnabled": true,
+    "lastUsed": null,
+    "dependencyUsageCounts": {}
+  }
 }
