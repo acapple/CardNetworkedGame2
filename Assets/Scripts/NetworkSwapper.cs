@@ -3,7 +3,7 @@ using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
 using UnityEngine;
 
-/*
+
 [ExecuteInEditMode]
 public class NetworkSwapper : MonoBehaviour
 {
@@ -46,5 +46,3 @@ public class NetworkSwapper : MonoBehaviour
     }
 
 }
-
-*/
