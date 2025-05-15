@@ -1,0 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LobbyMenu : MonoBehaviour
+{
+    public void StartGame()
+    {
+        GameManager.GM.StartGame();
+    }
+}
