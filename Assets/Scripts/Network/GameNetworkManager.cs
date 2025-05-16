@@ -14,7 +14,10 @@ public class GameNetworkManager : MonoBehaviour
 
 
     [Header("Variables")]
+    [SerializeField]
     int maxPlayers = 4;
+    [SerializeField]
+    internal static bool isHosting = false;
 
     [Header("References")]
     //NetworkSwapper.transports transport;
@@ -67,6 +70,7 @@ public class GameNetworkManager : MonoBehaviour
         {
             UNM.StartHost(maxPlayers);
         }
+        isHosting = true;
     }
 
 
@@ -81,6 +85,7 @@ public class GameNetworkManager : MonoBehaviour
         {
             UNM.StartClient();
         }
+        isHosting = false;
     }
 
 

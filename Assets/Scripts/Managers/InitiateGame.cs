@@ -7,5 +7,6 @@ public class InitiateGame : MonoBehaviour
     void Start()
     {
         GameNetworkManager.GNM.init();
+        Destroy(gameObject);
     }
 }

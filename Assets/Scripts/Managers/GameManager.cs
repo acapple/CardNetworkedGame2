@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : NetworkBehaviour
 {
     internal static GameManager GM;
     private void Awake()
@@ -17,8 +18,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
     internal void StartGame()
     {
+        if (!GameNetworkManager.isHosting) return;
+        StartGameClientRPC();
 
+    }
+
+    [Rpc(SendTo.Everyone)]
+    internal void StartGameClientRPC()
+    {
+        MenuManager.MM.disableLobby();
     }
 }
