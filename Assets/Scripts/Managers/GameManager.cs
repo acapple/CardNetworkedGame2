@@ -29,6 +29,6 @@ public class GameManager : NetworkBehaviour
     [Rpc(SendTo.Everyone)]
     internal void StartGameClientRPC()
     {
-        MenuManager.MM.disableLobby();
+        MenuManager.MM.GoToGame(MenuManager.MM.leavingLobby);
     }
 }

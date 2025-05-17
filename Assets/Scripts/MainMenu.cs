@@ -4,24 +4,16 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField]
-    GameObject lobby;
 
     public void startLobby()
     {
         GameNetworkManager.GNM.startLobby();
-        moveToGameLobby();
+        MenuManager.MM.GoToLobby(MenuManager.MM.leavingMainMenu);
     }
 
     public void JoinSelf()
     {
         GameNetworkManager.GNM.joinLobby();
-        moveToGameLobby();
-    }
-
-    public void moveToGameLobby()
-    {
-        lobby.SetActive(true);
-        gameObject.SetActive(false);
+        MenuManager.MM.GoToLobby(MenuManager.MM.leavingMainMenu);
     }
 }

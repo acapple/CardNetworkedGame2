@@ -831,6 +831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846f366e22ff0714a964aad3c7fda9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenu: {fileID: 1459071312}
   lobbyMenu: {fileID: 1187416321}
 --- !u!4 &506966881
 Transform:
@@ -1745,7 +1746,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142a0b78096fabd4fab5bb693c6add1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lobby: {fileID: 1187416320}
 --- !u!1 &1585776705
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,11 @@ public class MenuManager : MonoBehaviour
     internal static MenuManager MM;
 
     [SerializeField]
-    LobbyMenu lobbyMenu;
+    private MainMenu mainMenu;
+    [SerializeField]
+    private LobbyMenu lobbyMenu;
+
+    internal delegate void leaveMenu();
 
     private void Awake()
     {
@@ -21,8 +25,38 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    internal void disableLobby()
+    internal void GoToMainMenu(leaveMenu leaving)
+    {
+        leaving();
+        mainMenu.gameObject.SetActive(true);
+    }
+
+    internal void GoToLobby(leaveMenu leaving)
+    {
+        leaving();
+        lobbyMenu.gameObject.SetActive(true);
+    }
+
+    internal void GoToGame(leaveMenu leaving)
+    {
+        leaving();
+        //Game scene doesn't exist yet...
+    }
+
+
+
+    internal void leavingLobby()
     {
         lobbyMenu.gameObject.SetActive(false);
+    }
+
+    internal void leavingMainMenu()
+    {
+        mainMenu.gameObject.SetActive(false);
+    }
+
+    internal void leavingGame()
+    {
+        //Game doesn't exist yet...
     }
 }
